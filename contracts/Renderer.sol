@@ -6,8 +6,8 @@ import "./Utils.sol";
 
 contract Renderer {
     function render(uint256 _tokenId) public pure returns (string memory) {
-        uint256 balanceWidth = 200;
-        uint256 tokenBalance = 21641;
+        uint256 tokenBalance = 21414;
+        uint256 balanceWidth = 115 + 9 * (bytes(thousandSeparator(tokenBalance)).length + 4);
         uint256 lockedWidth = 220;
         uint256 lockedBalance = 21671;
         return
